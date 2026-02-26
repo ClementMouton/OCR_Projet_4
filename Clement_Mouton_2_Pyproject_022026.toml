@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "tech-nova-attrition"
+version = "0.1.0"
+description = "Projet de classification supervisée - Prédiction du départ des employés"
+authors = ["Clément Mouton"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+
+# Data manipulation
+pandas = "^2.1"
+numpy = "^1.26"
+
+# Visualisation
+matplotlib = "^3.8"
+seaborn = "^0.13"
+plotly = "^5.18"
+
+# Machine Learning
+scikit-learn = "^1.4"
+xgboost = "^2.0"
+lightgbm = "^4.3"
+catboost = "^1.2"
+
+# Notebook / Dev
+jupyter = "^1.0"
+ipykernel = "^6.29"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.0"
+isort = "^5.13"
+flake8 = "^7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
